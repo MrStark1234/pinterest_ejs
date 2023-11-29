@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #262626;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.local-container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.local-card {
+  background: black;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgb(222, 218, 218);
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 24px;
+  margin: 0;
+  color: #fff;
+}
+
+.username {
+  font-size: 18px;
+
+  margin: 10px 0;
+  color: #ececec;
+}
+
+.tagline,
+.description {
+  color: #e5e5e5;
+  margin: 10px 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 6px 10px;
+  background-color: rgb(240, 6, 6);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin: 6px 0;
+}
+
+.button:hover {
+  background-color: rgb(144, 1, 1);
+}
+
+.upload {
+  display: inline-block;
+  padding: 2px 6px;
+  background-color: rgb(34, 194, 252);
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: medium;
+  transition: background-color 0.3s;
+}
+
+.file {
+  padding: 5px;
+  font-size: 15px;
+  color: gray;
+  border: 2px solid rgb(218, 214, 214);
+  border-radius: 5px;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: start;
+  justify-content: center;
+}
+.card-body {
+  background: linear-gradient(45deg, #626270, transparent);
+}
