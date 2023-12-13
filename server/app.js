@@ -14,6 +14,8 @@ const passport = require("passport");
 
 var app = express();
 
+const port = 80;
+
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
@@ -56,4 +58,8 @@ app.use(function (err, req, res, next) {
   res.render("error");
 });
 
-module.exports = app;
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
+
+// module.exports = app;
