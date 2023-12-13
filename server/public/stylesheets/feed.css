@@ -231,3 +231,9 @@ img:hover {
 .nav a:hover {
   color: #019e77;
 }
+
+@media (max-width: 450px) {
+  .feed-lg-h5 {
+    width: 100px;
+  }
+}

@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="../stylesheets/feed.css">
 </head>
 
-<body>
+<!-- <body> -->
 
-    <body>
-        <!-- <nav>
+<body>
+    <!-- <nav>
             <div class="logo">
                 <h5>Stark's-Pinterest</h5>
 
@@ -28,218 +28,219 @@
             </div>
         </nav> -->
 
-        <div class="nav">
-            <h5>Stark's - Pinterest</h5>
-            <div class="inner-nav">
-                <a href="/profile">Profile</a>
-                <a href="/logout">Signout</a>
-            </div>
+    <div class="nav">
+        <div class="feed-lg-h5">
+            <h5>Stark's-Pinterest</h5>
         </div>
+        <div class="inner-nav">
+            <a href="/profile">Profile</a>
+            <a href="/logout">Signout</a>
+        </div>
+    </div>
 
 
-        <header>
-            <h2>Stark's Pinterest Collection Style Image Gallery.</h2>
-        </header>
+    <header>
+        <h2>Stark's Pinterest Collection Style Image Gallery.</h2>
+    </header>
 
 
-        <div class="container">
+    <div class="container">
 
-            <% allPosts.forEach((post)=>{ %>
-                <div class="box flex flex-wrap">
-                    <a href="/images/uploads/<%= post.image %>">
-                        <img src="/images/uploads/<%= post.image %>" alt="image"></a>
-                    <div class="caption">
-                        Uploaded By - <%=post.user.username%>
-                    </div>
+        <% allPosts.forEach((post)=>{ %>
+            <div class="box flex flex-wrap">
+                <a href="/images/uploads/<%= post.image %>">
+                    <img src="/images/uploads/<%= post.image %>" alt="image"></a>
+                <div class="caption">
+                    Uploaded By - <%=post.user.username%>
+                </div>
+            </div>
+
+            <% }) %>
+
+
+
+
+
+
+                <div class="box">
+                    <a href="https://oriontralelblog.com/wp-content/uploads/2019/08/IMG_6310.jpg">
+                        <img src="https://oriontravelblog.com/wp-content/uploads/2019/08/IMG_6310.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Striver </div>
+
                 </div>
 
-                <% }) %>
 
 
 
 
 
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/003.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/003.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Steve </div>
+                </div>
 
-                    <div class="box">
-                        <a href="https://oriontralelblog.com/wp-content/uploads/2019/08/IMG_6310.jpg">
-                            <img src="https://oriontravelblog.com/wp-content/uploads/2019/08/IMG_6310.jpg"
-                                alt="image"></a>
-                        <div class="caption">Uploaded By - Striver </div>
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/002.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/002.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Natasha </div>
+                </div>
 
-                    </div>
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/001.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/001.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - RoadSideCoder </div>
+                </div>
 
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/006.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/006.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Banner </div>
+                </div>
 
-
-
-
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/003.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/003.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Steve </div>
-                    </div>
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/002.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/002.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Natasha </div>
-                    </div>
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/001.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/001.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - RoadSideCoder </div>
-                    </div>
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/006.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/006.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Banner </div>
-                    </div>
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/007.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/007.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Rogers </div>
-                    </div>
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/007.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/007.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Rogers </div>
+                </div>
 
 
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/008.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/008.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Tony </div>
-                    </div>
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/008.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/008.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Tony </div>
+                </div>
 
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/009-scaled.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/009-scaled.jpg"
-                                alt="image"></a>
-                        <div class="caption">Uploaded By - Alex </div>
-                    </div>
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/009-scaled.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/009-scaled.jpg"
+                            alt="image"></a>
+                    <div class="caption">Uploaded By - Alex </div>
+                </div>
 
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/010.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/010.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - DarkRider </div>
-                    </div>
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/010.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/010.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - DarkRider </div>
+                </div>
 
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/011.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/011.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Rockstar </div>
-                    </div>
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/011.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/011.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Rockstar </div>
+                </div>
 
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/012.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/012.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Pooja </div>
-                    </div>
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/012.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/012.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Pooja </div>
+                </div>
 
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/013.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/013.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Jennifer </div>
-                    </div>
-
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/014.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/014.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Brelium Ritz </div>
-                    </div>
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/015.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/015.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Shrinivasa </div>
-                    </div>
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/016.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/016.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Meenakshi </div>
-                    </div>
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/021.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/021.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Krish Evans </div>
-                    </div>
-
-                    <div class="box">
-                        <a href="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg">
-                            <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg"
-                                alt="image"></a>
-                        <div class="caption">Uploaded By - Hamsworth </div>
-                    </div>
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/019.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/019.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Abrahim </div>
-                    </div>
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/020.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/020.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Peter </div>
-                    </div>
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/022.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/022.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Mr Tom </div>
-                    </div>
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/023.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/023.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Mr Parker </div>
-                    </div>
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/024.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/024.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Mr Banner </div>
-                    </div>
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/025.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/025.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Friday </div>
-                    </div>
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/026.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/026.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Mr Starnge </div>
-                    </div>
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/027.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/027.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Shivika </div>
-                    </div>
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/028.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/028.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Mr Robert </div>
-                    </div>
-
-                    <div class="box">
-                        <a href="https://orionstardesign.com/wp-content/uploads/2023/08/029.jpg">
-                            <img src="https://orionstardesign.com/wp-content/uploads/2023/08/029.jpg" alt="image"></a>
-                        <div class="caption">Uploaded By - Ritika Rizwi </div>
-                    </div>
-
-        </div>
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/013.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/013.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Jennifer </div>
+                </div>
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script src="../javascripts/feed.js"></script>
-    </body>
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/014.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/014.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Brelium Ritz </div>
+                </div>
 
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/015.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/015.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Shrinivasa </div>
+                </div>
+
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/016.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/016.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Meenakshi </div>
+                </div>
+
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/021.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/021.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Krish Evans </div>
+                </div>
+
+                <div class="box">
+                    <a href="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg">
+                        <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg"
+                            alt="image"></a>
+                    <div class="caption">Uploaded By - Hamsworth </div>
+                </div>
+
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/019.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/019.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Abrahim </div>
+                </div>
+
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/020.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/020.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Peter </div>
+                </div>
+
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/022.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/022.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Mr Tom </div>
+                </div>
+
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/023.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/023.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Mr Parker </div>
+                </div>
+
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/024.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/024.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Mr Banner </div>
+                </div>
+
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/025.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/025.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Friday </div>
+                </div>
+
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/026.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/026.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Mr Starnge </div>
+                </div>
+
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/027.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/027.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Shivika </div>
+                </div>
+
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/028.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/028.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Mr Robert </div>
+                </div>
+
+                <div class="box">
+                    <a href="https://orionstardesign.com/wp-content/uploads/2023/08/029.jpg">
+                        <img src="https://orionstardesign.com/wp-content/uploads/2023/08/029.jpg" alt="image"></a>
+                    <div class="caption">Uploaded By - Ritika Rizwi </div>
+                </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="../javascripts/feed.js"></script>
 </body>
+
+<!-- </body> -->
 
 </html>

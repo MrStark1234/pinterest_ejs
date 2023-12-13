@@ -138,9 +138,9 @@ body {
   background-color: black;
 }
 .nav h5 {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   color: #49ffd0;
   text-transform: uppercase;
   background-color: black;
@@ -148,7 +148,7 @@ body {
 .nav a {
   text-decoration: none;
   color: #49ffd0;
-  font-size: 20px;
+  font-size: 16px;
   background-color: black;
 }
 .inner-nav {
@@ -162,4 +162,10 @@ body {
 
 .nav a:hover {
   color: #019e77;
+}
+
+@media (max-width: 450px) {
+  .lg-h5 {
+    width: 100px;
+  }
 }
