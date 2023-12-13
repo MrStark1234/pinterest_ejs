@@ -12,9 +12,13 @@ passport.use(new localStrategy(userModel.authenticate()));
 router.get("/", function (req, res, next) {
   res.render("index");
 });
-router.get("/feed", function (req, res, next) {
-  res.render("feed");
+
+router.get("/feed", isLoggedIn, async function (req, res, next) {
+  const user = await userModel.findOne({ username: req.session.passport.user });
+  const allPosts = await postModel.find().populate("user");
+  res.render("feed", { user, allPosts });
 });
+
 router.post(
   "/upload",
   isLoggedIn,
@@ -30,7 +34,8 @@ router.post(
     });
     const postData = await postModel.create({
       image: req.file.filename, // req.file.filename me uploaded image file ka naam hota hai
-      caption: req.body.caption,
+      caption: req.body.description,
+      title: req.body.title,
       user: user._id, // yaha post ko user ki ID de rahe hai
     });
 
@@ -51,11 +56,24 @@ router.get("/profile", isLoggedIn, async function (req, res, next) {
   res.render("profile", { user });
 });
 
-router.post("/register", function (req, res) {
+router.get("/add", isLoggedIn, async function (req, res, next) {
+  const user = await userModel
+    .findOne({ username: req.session.passport.user })
+    .populate("posts"); // .populate user me bane "posts" ke array ko open karke uske data ko dikha raha hai
+
+  res.render("add", { user });
+});
+
+router.post("/register", upload.single("file"), async function (req, res) {
+  if (!req.file) {
+    res.status(400).send("No file were uploaded");
+  }
+  console.log(req.file.filename);
   var userData = new userModel({
     username: req.body.username,
     fullname: req.body.fullname,
     email: req.body.email,
+    dp: req.file.filename,
   });
   userModel
     .register(userData, req.body.password)

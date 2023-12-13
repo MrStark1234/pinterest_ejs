@@ -166,3 +166,11 @@ span {
   text-transform: capitalize;
   margin: 7px 0;
 }
+
+.file {
+  padding: 5px;
+  font-size: 15px;
+  color: gray;
+  border: 2px solid rgb(218, 214, 214);
+  border-radius: 5px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-Pins</title>
+    <link rel="stylesheet" href="../stylesheets/add.css">
+</head>
+
+<body>
+    <div class="add-page">
+        <h1>Create a new Post..</h1>
+        <hr />
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <input type="text" placeholder="Title" name="title" />
+            <textarea type="text" placeholder="Description" name="description"></textarea>
+            <button type="submit">Create Post</button>
+        </form>
+    </div>
+</body>
+
+</html>

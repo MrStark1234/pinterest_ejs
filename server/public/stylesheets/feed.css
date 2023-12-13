@@ -7,13 +7,26 @@
     "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 }
 
+/* nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: #000000;
+
+  width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro",
+    "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+  z-index: 1;
+  opacity: 0.9;
+} */
+
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
   background-color: #000000;
-  position: fixed;
   width: 100%;
   font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro",
     "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
@@ -182,3 +195,5 @@ img:hover {
     columns: 1;
   }
 }
+
+/* kbjdksx */

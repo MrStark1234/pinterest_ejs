@@ -33,6 +33,10 @@ const userSchema = new mongoose.Schema({
   dp: {
     type: String,
   },
+  board: {
+    type: Array,
+    default: [],
+  },
 });
 
 userSchema.plugin(plm);
